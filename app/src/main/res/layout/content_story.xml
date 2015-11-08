@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_story"
+    tools:context="com.mascot.team.interactivestory.ui.StoryActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Heloo Mr Dominu sGracias how are you doing today its been quite some times since we met last"
+        android:id="@+id/StoryTextView"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:layout_below="@+id/StoryImageView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/StoryImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/StoryTextView"
+        android:layout_alignEnd="@+id/StoryTextView"
+        android:src="@drawable/page0"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choice Button 2"
+        android:id="@+id/ChoiceButton2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:textColor="@color/blue"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choice Button 1"
+        android:id="@+id/ChoiceButton1"
+        android:layout_above="@+id/ChoiceButton2"
+        android:layout_centerHorizontal="true"
+        android:background="#ffffff"
+        android:textColor="@color/blue"/>
+</RelativeLayout>
